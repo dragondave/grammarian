@@ -1,5 +1,5 @@
 from Levenshtein import distance
-with open("/usr/share/dict/british-english") as f:
+with open("british-english") as f:
     words = set([x.strip().lower() for x in f.readlines() if x.strip()])
 
 with open("spells.txt") as f:
